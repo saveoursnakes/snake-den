@@ -1,9 +1,9 @@
 {
-  "name": "application-name",
+  "name": "save-our-snakes",
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "nodejs ./bin/www"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.0.0",
