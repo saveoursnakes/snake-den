@@ -1,0 +1,163 @@
+/* line 1, scss/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 22, scss/_reset.scss */
+html * > svg {
+  -webkit-transform-origin-x: 0%;
+  -webkit-transform-origin-y: 0%;
+  -webkit-transform-origin-z: initial;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, scss/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 32, scss/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 35, scss/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 38, scss/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 41, scss/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 46, scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 51, scss/_reset.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 1, scss/_navigation.scss */
+body {
+  background-color: #F8FCFF;
+}
+
+/* line 5, scss/_navigation.scss */
+.global-nav {
+  height: 85px;
+  background: #EFECF5;
+}
+/* line 9, scss/_navigation.scss */
+.global-nav__list {
+  text-align: center;
+}
+/* line 14, scss/_navigation.scss */
+.global-nav__item {
+  display: inline-block;
+  margin: 35px 20px;
+  vertical-align: top;
+}
+/* line 20, scss/_navigation.scss */
+.global-nav__logo {
+  width: 150px;
+}
+/* line 24, scss/_navigation.scss */
+.global-nav__link {
+  margin-top: 30px;
+}
+
+/* line 1, scss/_splash.scss */
+.splash {
+  text-align: center;
+  margin-top: 5%;
+}
+/* line 5, scss/_splash.scss */
+.splash__logo {
+  width: 300px;
+  margin: auto;
+}
+@media (max-width: 600px) {
+  /* line 5, scss/_splash.scss */
+  .splash__logo {
+    width: 150px;
+    margin-top: 20%;
+  }
+}
+/* line 14, scss/_splash.scss */
+.splash__headline {
+  font-size: 32px;
+  letter-spacing: 3px;
+  font-family: 'Fredoka One', cursive;
+  margin-top: 3%;
+  color: #404D56;
+}
+@media (max-width: 600px) {
+  /* line 14, scss/_splash.scss */
+  .splash__headline {
+    font-size: 18px;
+    margin-top: 13%;
+  }
+}
+
+/* line 30, scss/_splash.scss */
+.floating {
+  animation-name: floating;
+  -webkit-animation-name: floating;
+  animation-duration: 2.5s;
+  -webkit-animation-duration: 25px 0.5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(2%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(2%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
